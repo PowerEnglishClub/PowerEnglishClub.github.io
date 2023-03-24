@@ -1,0 +1,357 @@
+:root {
+  --primary-color: #590606;
+  --secondary-color: #080339;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  direction: rtl;
+  font-family: "Simplified Arabic", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+header img {
+  width: 200px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header li {
+  margin-left: 10px;
+  padding: 15px 40px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+header a {
+  color: white;
+  font-weight: bold;
+  border-bottom: solid transparent 2px;
+  transition: all 0.5s ease;
+}
+
+header a:hover {
+  border-bottom: solid white 2px;
+}
+
+#menu-icon {
+  font-size: 30px;
+  color: black;
+  display: none;
+}
+
+.our-story,
+.goals,
+.improving,
+.rules,
+.engine {
+  margin: 20px 0;
+}
+
+.our-story {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-story img {
+  width: 50%;
+}
+
+.story {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.story p {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.story h2 {
+  text-align: center;
+}
+
+.goals h1 {
+  color: var(--primary-color);
+}
+
+.goals ul {
+  list-style-position: inside;
+}
+
+.improving h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.improving .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-btn,
+#right-btn {
+  font-size: 60px;
+}
+
+.improving .skill {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill ul {
+  font-size: 24px;
+}
+
+.improving ul {
+  list-style-position: inside;
+}
+
+.rules h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.rules .content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.rules .card {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
+}
+.rules i {
+  font-size: 50px;
+}
+
+.engine {
+  display: flex;
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.engine .part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.engine img {
+  width: 64px;
+}
+
+.engine .operator {
+  width: 32px;
+}
+
+.engine .part {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.engine .part p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact .info {
+  width: 50%;
+}
+
+.contact .info h1 {
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.contact .info input {
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.contact .info input:focus {
+  outline: none;
+}
+
+.contact .info input::placeholder {
+  color: var(--secondary-color);
+}
+
+.contact .info textarea {
+  margin: 20px auto;
+  width: 60%;
+  height: 100px;
+  padding: 10px;
+  display: block;
+  border: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.contact .info textarea::placeholder {
+  color: var(--secondary-color);
+}
+
+.contact .info textarea:focus {
+  outline: none;
+}
+
+.contact .info input[type="submit"] {
+  width: 100px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact img {
+  width: 300px;
+  height: 500px;
+  margin-left: 100px;
+}
+
+.contact input {
+  display: block;
+}
+
+.contact textarea {
+  resize: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    background: white;
+    padding: 0;
+  }
+
+  header ul li {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+
+  #left-btn,
+  #right-btn {
+    font-size: 28px;
+  }
+
+  .our-story img {
+    display: none;
+  }
+
+  .our-story,
+  .goals,
+  .improving,
+  .rules,
+  .contact {
+    margin: 20px;
+  }
+
+  .rules .card {
+    margin-bottom: 20px;
+  }
+
+  .skill ul {
+    font-size: 16px;
+  }
+
+  .engine {
+    margin: 0 auto;
+  }
+
+  .contact .info h1 {
+    font-size: 28px;
+  }
+  .contact .info {
+    width: 100%;
+  }
+  .contact .info input {
+    width: 100%;
+  }
+
+  .contact .info textarea {
+    width: 100%;
+  }
+
+  .contact img {
+    display: none;
+  }
+}
