@@ -54,6 +54,8 @@ improving.addEventListener(events[deviceType].down, (event) => {
   getXY(event);
   initialX = mouseX;
   initialY = mouseY;
+
+  console.log("Down");
 });
 
 improving.addEventListener(events[deviceType].move, (event) => {
@@ -70,14 +72,18 @@ improving.addEventListener(events[deviceType].move, (event) => {
       diffX > 0 ? ChangeSlide(-1) : ChangeSlide(1);
     }
   }
+
+  console.log("Move");
 });
 
 improving.addEventListener(events[deviceType].up, () => {
   isSwiped = false;
+  console.log("Up");
 });
 
 improving.addEventListener("mouseleave", () => {
   isSwiped = false;
+  console.log("Leave");
 });
 
 menuIcon.addEventListener("click", function () {

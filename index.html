@@ -11,15 +11,15 @@
       <header>
         <img src="img/menu-hambuger.svg" alt="menu icon" id="menu-icon" />
         <ul>
-          <li><a href="#">قصتنا</a></li>
-          <li><a href="#">التطور</a></li>
-          <li><a href="#">القواعد</a></li>
-          <li><a href="#">إتصل بنا</a></li>
+          <li><a href="#our-story">قصتنا</a></li>
+          <li><a href="#improving">التطور</a></li>
+          <li><a href="#rules">القواعد</a></li>
+          <li><a href="#contact">إتصل بنا</a></li>
         </ul>
         <img src="img/logo.png" alt="Power English Club Logo" />
       </header>
 
-      <div class="our-story">
+      <div class="our-story" id="our-story">
         <div class="story">
           <h1>قصتنا</h1>
           <p>
@@ -65,7 +65,7 @@
         </ul>
       </div>
 
-      <div class="improving">
+      <div class="improving" id="improving">
         <h1>التطوير</h1>
         <div class="content">
           <img src="img/chevron-right.svg" id="right-btn" alt="chevron right" />
@@ -131,7 +131,7 @@
         </div>
       </div>
 
-      <div class="rules">
+      <div class="rules" id="rules">
         <h1>القواعد الخمسة ( The five rules )</h1>
         <div class="content">
           <div class="card">
@@ -182,13 +182,21 @@
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="info">
           <h1>تواصل معنا</h1>
-          <form>
-            <input type="text" placeholder="الإسم الكامل" />
-            <input type="email" placeholder="الإيميل" />
-            <textarea placeholder="نص الرسالة"></textarea>
+          <form
+            action="https://formsubmit.co/powerenglishclub@yahoo.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="الإسم الكامل"
+              required
+            />
+            <input type="email" name="email" placeholder="الإيميل" required />
+            <textarea name="message" placeholder="نص الرسالة"></textarea>
             <input type="submit" value="إرسال" />
           </form>
         </div>
