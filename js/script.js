@@ -94,11 +94,13 @@ menuIcon.addEventListener("click", function () {
 });
 
 left.addEventListener("click", function () {
-  ChangeSlide(-1);
+  //ChangeSlide(-1);
+  alert("Left");
 });
 
 right.addEventListener("click", function () {
-  ChangeSlide(1);
+  //ChangeSlide(1);
+  alert("Right");
 });
 
 function ChangeSlide(sens) {
