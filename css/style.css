@@ -106,23 +106,12 @@ header a:hover {
   list-style-position: inside;
 }
 
-.improving h1 {
+.swiper h1 {
   color: var(--primary-color);
   margin-bottom: 20px;
 }
 
-.improving .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#left-btn,
-#right-btn {
-  width: 64px;
-}
-
-.improving .skill {
+.swiper .swiper-slide {
   background-color: #ddd;
   padding: 20px;
   border-radius: 10px;
@@ -134,11 +123,8 @@ header a:hover {
   justify-content: center;
 }
 
-.skill ul {
+.swiper-slide ul {
   font-size: 24px;
-}
-
-.improving ul {
   list-style-position: inside;
 }
 
@@ -312,18 +298,13 @@ footer {
     margin-right: 20px;
   }
 
-  #left-btn,
-  #right-btn {
-    width: 32px;
-  }
-
   .our-story img {
     display: none;
   }
 
   .our-story,
   .goals,
-  .improving,
+  .swiper,
   .rules,
   .contact {
     margin: 20px;
@@ -333,7 +314,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .skill ul {
+  .swiper-slide ul {
     font-size: 16px;
   }
 

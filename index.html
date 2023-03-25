@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Power English Club</title>
   </head>
@@ -65,12 +66,12 @@
         </ul>
       </div>
 
-      <div class="improving" id="improving">
+      <div class="swiper">
         <h1>التطوير</h1>
-        <div class="content">
-          <img src="img/chevron-right.svg" id="right-btn" alt="chevron right" />
-
-          <div class="skill" id="language">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
             <h2>تطوير اللغة</h2>
             <ul>
               <li>التركيز على المدخلات ( الإستماع و القراءة )</li>
@@ -80,7 +81,7 @@
             </ul>
           </div>
 
-          <div class="hidden" id="listening">
+          <div class="swiper-slide">
             <h2>تطوير مهارة الإستماع</h2>
             <ul>
               <li>
@@ -95,7 +96,7 @@
             </ul>
           </div>
 
-          <div class="hidden" id="speaking">
+          <div class="swiper-slide">
             <h2>تطوير مهارة المحادثة</h2>
             <ul>
               <li>المحادثة يوميا ولو مع نفسك</li>
@@ -105,7 +106,7 @@
             </ul>
           </div>
 
-          <div class="hidden" id="reading">
+          <div class="swiper-slide">
             <h2>تطوير مهارة القراءة</h2>
             <ul>
               <li>
@@ -117,7 +118,7 @@
             </ul>
           </div>
 
-          <div class="hidden" id="writing">
+          <div class="swiper-slide">
             <h2>تطوير مهارة الكتابة</h2>
             <ul>
               <li>لنكن صرحاء، الكتابة هي أصعب مهارة لذلك لا تتعجل النتائج</li>
@@ -126,9 +127,13 @@
               <li>الإستمرار على الكتابة الحرة</li>
             </ul>
           </div>
-
-          <img src="img/chevron-left.svg" id="left-btn" alt="left right" />
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
       <div class="rules" id="rules">
@@ -206,6 +211,7 @@
       <footer>Power English Club &copy; 2023</footer>
     </div>
     <!-- Custom Script -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
