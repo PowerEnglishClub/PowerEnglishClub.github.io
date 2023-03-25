@@ -158,14 +158,14 @@ header a:hover {
 
 .rules .card {
   width: 120px;
-  height: 120px;
+  height: 140px;
   border-radius: 10px;
   text-align: center;
   background-color: #ddd;
   padding: 10px;
 }
-.rules i {
-  font-size: 50px;
+.rules img {
+  width: 64px;
 }
 
 .engine {
