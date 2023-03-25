@@ -16,6 +16,10 @@
   width: 800px;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -54,7 +58,7 @@ header a:hover {
 }
 
 #menu-icon {
-  font-size: 30px;
+  width: 32px;
   color: black;
   display: none;
 }
@@ -115,7 +119,7 @@ header a:hover {
 
 #left-btn,
 #right-btn {
-  font-size: 60px;
+  width: 64px;
 }
 
 .improving .skill {
@@ -310,7 +314,7 @@ footer {
 
   #left-btn,
   #right-btn {
-    font-size: 28px;
+    width: 32px;
   }
 
   .our-story img {

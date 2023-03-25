@@ -4,21 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Power English Club</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <img src="img/menu-hambuger.svg" alt="menu icon" id="menu-icon" />
         <ul>
           <li><a href="#">قصتنا</a></li>
           <li><a href="#">التطور</a></li>
@@ -77,8 +69,9 @@
       <div class="improving">
         <h1>التطوير</h1>
         <div class="content">
-          <div class="bx bx-chevron-right" id="right-btn"></div>
-          <div class="skill">
+          <img src="img/chevron-right.svg" id="right-btn" alt="chevron right" />
+
+          <div class="skill" id="language">
             <h2>تطوير اللغة</h2>
             <ul>
               <li>التركيز على المدخلات ( الإستماع و القراءة )</li>
@@ -87,7 +80,55 @@
               <li>الكتابة الحرة يوميا</li>
             </ul>
           </div>
-          <div class="bx bx-chevron-left" id="left-btn"></div>
+
+          <div class="hidden" id="listening">
+            <h2>تطوير مهارة الإستماع</h2>
+            <ul>
+              <li>
+                الإستماع هو أول و أهم مهارة لتطوير لغتك بالكامل ( الطفل الصغير
+                يتعلم عن طريق الإستماع للأسرة و البيئة المحيطة به )
+              </li>
+              <li>كلما سمعت أكثر، كلما تطورت لغتك بشكل كبير و خاصة المحادثة</li>
+              <li>
+                الإستمرار في الإستماع يعني التعود على اللغة، اللهجة، كلمات جديدة
+                و التفكير بالإنجليزي
+              </li>
+            </ul>
+          </div>
+
+          <div class="hidden" id="speaking">
+            <h2>تطوير مهارة المحادثة</h2>
+            <ul>
+              <li>المحادثة يوميا ولو مع نفسك</li>
+              <li>لماذا الخوف ؟ تحدث و لا تهتم بالأخطاء أنت لست في إمتحان</li>
+              <li>المحادثة مرتبطة بشكل كبير بالإستماع لذلك استمع كثيرا</li>
+              <li>تكلم في أي موضوع أو أي شيئ يخطر ببالك</li>
+            </ul>
+          </div>
+
+          <div class="hidden" id="reading">
+            <h2>تطوير مهارة القراءة</h2>
+            <ul>
+              <li>
+                استخدم المصدر المناسب لمستواك الحالي ( يعني مفهوم بنسبة 60 إلى
+                80 )
+              </li>
+              <li>البداية بالقصص و الروايات</li>
+              <li>الإنضمام الى Power English Club</li>
+            </ul>
+          </div>
+
+          <div class="hidden" id="writing">
+            <h2>تطوير مهارة الكتابة</h2>
+            <ul>
+              <li>لنكن صرحاء، الكتابة هي أصعب مهارة لذلك لا تتعجل النتائج</li>
+              <li>الكتابة يوميا و لو لمدة قصيرة</li>
+              <li>أكتب عن أي شيئ يخطر ببالك</li>
+              <li>الإستمرار على الكتابة الحرة</li>
+            </ul>
+          </div>
+
+          <img src="img/chevron-left.svg" id="left-btn" alt="left right" />
         </div>
       </div>
 
